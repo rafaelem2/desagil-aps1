@@ -20,7 +20,7 @@ public class Carrinho {
 		boolean Produtonovo = true;
 		for (Pedido pedido: this.Pedidos) {
 			if (pedido.getProduto().equals(produto)) {
-				pedido.incrementaQuantidade();
+				pedido.incrementa();
 				Produtonovo = false;
 			}
 		}
