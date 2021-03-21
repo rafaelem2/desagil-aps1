@@ -22,7 +22,7 @@ public class Caixa {
 		for (Pedido pedido: carrinho.getPedidos()) {
 			if (this.descontos.containsKey(pedido.getProduto().getCodigo())) {
 				double desconto = descontos.get(pedido.getProduto().getCodigo());
-				valortotal = valortotal + ((pedido.getProduto().getPreco() * pedido.getQuantidade()) * (desconto/100));
+				valortotal = valortotal + ((pedido.getProduto().getPreco() * pedido.getQuantidade()) * (1-(desconto/100)));
 			}
 			else {
 				valortotal = valortotal + pedido.precoPedido();
