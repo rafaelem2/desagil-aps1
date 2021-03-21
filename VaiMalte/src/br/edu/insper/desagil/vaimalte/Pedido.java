@@ -10,8 +10,8 @@ public class Pedido {
 		this.quantidade = 1;
 	}
 	
-	public void incrementaQuantidade() {
-		this.quantidade = this.quantidade + 1;
+	public void incrementa() {
+		this.quantidade += 1;
 	}
 	
 	public double precoPedido() {
